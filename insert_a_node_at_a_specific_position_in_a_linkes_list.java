@@ -18,16 +18,12 @@
         SinglyLinkedListNode ant;
         aux = head;
         ant = null;
-        nuevo.next = null;
-        int nums = 0;
+        nuevo.next = null;        
         if(head == null){ // checamos que la lista no esté vacía
             head = nuevo;
             nums = nuevo.data;
         }
-        else{
-            for(int i=0; i < nums; i++){
-                head.next = nuevo;
-            }
+        else{       
             for(int i = 0; i < position; i++){ // hacemos un ciclo hasta llegar a la posición para añadir el nodo.
                 ant = aux; //anterior seguirá a auxiliar.
                 aux = aux.next; //auxiliar avanza.
